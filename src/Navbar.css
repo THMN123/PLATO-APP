@@ -1,0 +1,51 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+  background-color: #0e131f; /* Updated Navbar background color */
+  padding: 10px 20px; /* Padding for the navbar */
+  color: white; /* Text color */
+  position: fixed; /* Fixed positioning */
+  top: 0; /* Align to the top */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure navbar is above other content */
+}
+
+.navbar-left {
+  display: flex; /* Align icons and logo horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar-icon {
+  font-size: 40px; /* Icon size */
+  margin: 0 10px; /* Space around icons */
+  color: white; /* Icon color */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.navbar-logo {
+  width: 80px; /* Logo size */
+  height: 80px; /* Logo size */
+  object-fit: contain; /* Maintain aspect ratio */
+  margin: 0 10px; /* Space around the logo */
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.navbar-button {
+  background-color: #161c2e; /* Button background color */
+  color: #f2ddcc; /* Button text color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Button padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.navbar-button:hover {
+  background-color: orange; /* Change hover background color to orange */
+  color: white; /* Change text color on hover */
+}

@@ -1,0 +1,61 @@
+.sidebar {
+    width: 80px; /* Initial width for the sidebar */
+    background-color: #0e131f; /* Background color */
+    color: white; /* Text color */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    padding: 20px; /* Padding inside the sidebar */
+    position: fixed; /* Fix the sidebar in place */
+    height: 100%; /* Full height */
+    transition: width 0.3s ease; /* Smooth transition for width */
+  }
+  
+  .sidebar-item {
+    display: flex; /* Align icon and text horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Space around items */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background */
+    position: relative; /* Position relative for absolute child */
+    width: 100%; /* Ensure item takes full width */
+    border-radius: 8px; /* Rounded corners for the sidebar item */
+    overflow: hidden; /* Prevent text overflow */
+  }
+  
+  .sidebar-description {
+    margin-left: 10px; /* Space between icon and text */
+    opacity: 0; /* Hide text initially */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflow */
+  }
+  
+  .sidebar-item:hover .sidebar-description {
+    opacity: 1; /* Show text on hover */
+  }
+  
+  .sidebar-item:hover {
+    background-color: #2b3448; /* Change background color on hover */
+  }
+  
+  .sidebar:hover {
+    width: 160px; /* Expanded width on hover */
+  }
+  
+  .sidebar:hover .sidebar-description {
+    opacity: 1; /* Ensure text is visible when sidebar is hovered */
+  }
+  
+  .sidebar-icon {
+    font-size: 24px; /* Icon size */
+  }
+  
+  .home {
+    display: flex; /* Use flexbox for the main layout */
+  }
+  
+  .content {
+    margin-left: 100px; /* Adjust margin to the left to account for shorter sidebar width */
+    padding: 20px; /* Padding for the content area */
+    flex-grow: 1; /* Allow content area to take remaining space */
+  }

@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.css'; // Import your main CSS
+import Navbar from './Navbar'; // Import the Navbar component
+import Home from './Home'; // Assuming Home component is your main content
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Navbar /> {/* Add the Navbar at the top */}
+      <Home /> {/* Your existing Home component */}
     </div>
   );
-}
+};
 
 export default App;

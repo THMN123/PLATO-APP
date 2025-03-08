@@ -1,38 +1,77 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #101524;
+}
+
+h1 {
   text-align: center;
+  margin: 20px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2, h3 {
+  color: #f2ddcc;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  background-color: #161c2e; /* Card background color */
+  border: 1px solid #2b3448; /* Light grey outline that blends with the background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px; /* Moderate padding */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: space-between; /* Space items with room for button */
+  width: 200px; /* Fixed width for cards */
+  min-height: 320px; /* Increased minimum height for cards */
+  overflow: hidden; /* Hide overflow to prevent content from spilling out */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Increased shadow on hover */
 }
 
-.App-link {
-  color: #61dafb;
+.joint-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Adjust column size */
+  gap: 20px; /* Space between cards */
+  padding: 20px; /* Padding around the grid */
+  align-items: stretch; /* Make all cards the same height */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.joint-logo {
+  width: 90px; /* Fixed width for logos */
+  height: 90px; /* Fixed height for logos */
+  object-fit: contain; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Spacing below logo */
 }
+
+.order-button {
+  background-color: orange; /* Change Order Now button background color to orange */
+  color: white; /* Text color for Order Now button */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Button padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s;
+}
+
+.order-button:hover {
+  background-color: #cc7a00;
+}
+
+.content {
+  margin-left: 100px; /* Adjust margin to the left to account for shorter sidebar width */
+  padding: 20px; /* Padding for the content area */
+  flex-grow: 1; /* Allow content area to take remaining space */
+  margin-top: 80px; /* Add top margin to avoid being hidden behind the fixed navbar */
+}
+
+
+
+
+
