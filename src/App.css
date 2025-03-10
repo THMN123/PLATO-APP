@@ -70,8 +70,3 @@ h2, h3 {
   flex-grow: 1; /* Allow content area to take remaining space */
   margin-top: 80px; /* Add top margin to avoid being hidden behind the fixed navbar */
 }
-
-
-
-
-
