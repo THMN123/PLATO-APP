@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center; /* Center items vertically */
-  background-color: #0e131f; /* Updated Navbar background color */
+  background-color: #0e131f; /* Navbar background color */
   padding: 10px 20px; /* Padding for the navbar */
   color: white; /* Text color */
   position: fixed; /* Fixed positioning */
@@ -17,7 +17,7 @@
 }
 
 .navbar-icon {
-  font-size: 40px; /* Icon size */
+  font-size: 36px; /* Slightly smaller icon size */
   margin: 0 10px; /* Space around icons */
   color: white; /* Icon color */
   cursor: pointer; /* Pointer cursor on hover */
@@ -25,14 +25,14 @@
 
 .navbar-logo {
   width: 80px; /* Logo size */
-  height: 80px; /* Logo size */
+  height: auto; /* Maintain aspect ratio */
   object-fit: contain; /* Maintain aspect ratio */
   margin: 0 10px; /* Space around the logo */
 }
 
 .navbar-buttons {
   display: flex;
-  gap: 10px; /* Space between buttons */
+  gap: 15px; /* Increased space between buttons */
 }
 
 .navbar-button {
@@ -40,10 +40,13 @@
   color: #f2ddcc; /* Button text color */
   border: none;
   border-radius: 5px; /* Rounded corners */
-  padding: 10px 15px; /* Button padding */
+  padding: 10px 20px; /* Button padding */
   cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s; /* Smooth transition for hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover */
+  font-size: 16px; /* Increased font size for better visibility */
+  margin-left: -200px; /* Move button to the left */
 }
+
 
 .navbar-button:hover {
   background-color: orange; /* Change hover background color to orange */
