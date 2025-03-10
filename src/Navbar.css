@@ -32,7 +32,10 @@
 
 .navbar-buttons {
   display: flex;
-  gap: 15px; /* Increased space between buttons */
+  gap: 15px; /* Space between buttons */
+  justify-content: flex-end; /* Align buttons to the right */
+  align-items: center; /* Center buttons vertically */
+  padding-right: 30px; /* Increase the space to push buttons away from the scrollbar */
 }
 
 .navbar-button {
@@ -42,13 +45,13 @@
   border-radius: 5px; /* Rounded corners */
   padding: 10px 20px; /* Button padding */
   cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover */
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Smooth transition for hover */
   font-size: 16px; /* Increased font size for better visibility */
-  margin-left: -200px; /* Move button to the left */
+  margin-right: 5px; /* Add a small margin to each button for extra spacing */
 }
-
 
 .navbar-button:hover {
   background-color: orange; /* Change hover background color to orange */
   color: white; /* Change text color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly deeper shadow on hover */
 }
