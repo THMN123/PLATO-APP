@@ -19,7 +19,6 @@
   position: relative; /* Position relative for absolute child */
   width: 100%; /* Ensure item takes full width */
   border-radius: 8px; /* Rounded corners for the sidebar item */
-  overflow: hidden; /* Prevent text overflow */
 }
 
 .sidebar-description {
@@ -46,16 +45,9 @@
   opacity: 1; /* Ensure text is visible when sidebar is hovered */
 }
 
-.sidebar-icon {
-  font-size: 24px; /* Icon size */
-}
-
-.home {
-  display: flex; /* Use flexbox for the main layout */
-}
-
-.content {
-  margin-left: 100px; /* Adjust margin to the left to account for shorter sidebar width */
-  padding: 20px; /* Padding for the content area */
-  flex-grow: 1; /* Allow content area to take remaining space */
+/* Hide sidebar on mobile */
+@media (max-width: 767px) {
+  .sidebar {
+    display: none; /* Hide sidebar on mobile */
+  }
 }

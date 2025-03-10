@@ -70,3 +70,33 @@ h2, h3 {
   flex-grow: 1; /* Allow content area to take remaining space */
   margin-top: 80px; /* Add top margin to avoid being hidden behind the fixed navbar */
 }
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .content {
+    margin-left: 0; /* Remove left margin on mobile */
+    padding-bottom: 60px; /* Add padding for tab bar */
+  }
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000; /* Ensure modal is above other content */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
